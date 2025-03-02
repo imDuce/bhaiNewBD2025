@@ -141,6 +141,11 @@
   }
 
   .Content {
+
+    max-width: 100%; // Ensure it doesn't exceed the viewport width
+    overflow: hidden; // Prevent content from overflowing
+    padding: 1rem; // Add some padding for better layout
+    box-sizing: border-box;
     > * {
       min-block-size: calc(100dvb - var(--size-9));
     }
