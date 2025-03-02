@@ -74,7 +74,7 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="outer-flex-container ">
         <div className="footer-copyright">
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/@Wanderer471" target="_blank" rel="noopener noreferrer">
             <span className="material-icons">person_outline</span>
             {/* <span className="material-icons"></span> */}
           </a>

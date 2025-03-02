@@ -71,8 +71,8 @@ const BirthdayCard = () => {
             <img src={img13Nobg} alt="" />
           </div>
           <div className="back face">
-            <div className="absolute top-[-60%]">
-            <h3>Level 17 Unlocked! </h3>
+            <div className="absolute top-[-60%] left-[10px]">
+            <h3 className="font-extrabold">Level 17 Unlocked! </h3>
             </div>
             {/* <p className="peee ech1" data-splotting>
               <span className="text-wrapper">
