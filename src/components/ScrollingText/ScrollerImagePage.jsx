@@ -192,7 +192,7 @@ const ScrollerImagePage = () => {
               </div>
             </div>
 
-            <div className="Content block">
+            <div className="Content ">
               <div id="Genesis" className="FirstLockup block-center-start">
                 <div className="block gap-3">
                   <h3>Genesis</h3>
