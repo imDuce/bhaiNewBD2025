@@ -63,7 +63,7 @@
     flex-direction: row; // Ensure the direction is horizontal
     align-items: flex-start; // Align items at the start of the cross axis
     justify-content: space-between; // Add space between the items
-    gap: 900px;
+    gap: 830px;
   }
 
   .Visual {
@@ -125,7 +125,7 @@
     //   padding-left: 400rem ;
     }
     & h3 {
-      inline-size: 15ch;
+      inline-size: 13ch;
       font-family: "Grape Nuts", cursive;
       /* font-weight: 400; */
       font-style: normal;
@@ -143,7 +143,8 @@
       /* font-weight: 400; */
       font-style: normal;
       font-size: 4.75rem;
-      max-inline-size: var(--size-content-2);
+    //   max-inline-size: var(--size-content-2);
+      max-inline-size: 20ch;
       font-size: var(--font-size-3);
       color: white;
     }
