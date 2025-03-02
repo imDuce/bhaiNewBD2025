@@ -63,7 +63,7 @@
     flex-direction: row; // Ensure the direction is horizontal
     align-items: flex-start; // Align items at the start of the cross axis
     justify-content: space-between; // Add space between the items
-    gap: 830px;
+    gap: 800px;
   }
 
   .Visual {
@@ -130,7 +130,7 @@
       /* font-weight: 400; */
       font-style: normal;
       text-wrap: balance;
-      font-size: 5.75rem;
+      font-size: 100px;
       font-weight: var(--font-weight-7);
       line-height: var(--font-lineheight-0);
       padding-block-end: var(--size-4);
