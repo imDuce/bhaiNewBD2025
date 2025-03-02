@@ -158,7 +158,7 @@ const Carousel = () => {
             />
           </a> */}
     
-            <video controls loop poster={me1} onClick={() => window.open(vid1, "_blank", "noopener,noreferrer")}>
+            <video controls loop poster={me1} onClick={() => window.open("https://drive.google.com/file/d/1XIfpaJtOqHxHSr0ajmSuv20Nj_REA_we/view?usp=sharing", "_blank", "noopener,noreferrer")}>
               <source
                 src='https://drive.google.com/file/d/1XIfpaJtOqHxHSr0ajmSuv20Nj_REA_we/view?usp=sharing'
                 type="video/mp4"
