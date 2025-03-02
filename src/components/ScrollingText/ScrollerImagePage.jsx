@@ -220,7 +220,7 @@ const ScrollerImagePage = () => {
                       A brother, a best friend, a forever player in my game of
                       life
                     </div>
-                    <p>simply irreplaceable !</p>
+                    <p>simply irreplaceable!</p>
                   </div>
                 </div>
                 {/* experimentation with fourth pic  */}
@@ -271,7 +271,7 @@ const ScrollerImagePage = () => {
                   <div className="block gap-3">
                     <h3>Soulbound</h3>
                     <div className="subhead">More than a brother</div>
-                    <p>our bond is an unbreakable co-op mode</p>
+                    <p>our bond is an unbreakable co-op mode.</p>
                   </div>
                 </div>
 
