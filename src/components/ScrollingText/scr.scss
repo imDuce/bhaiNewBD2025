@@ -1,21 +1,21 @@
-@import 'https://unpkg.com/open-props@1.6.14' layer(design-system.tokens);
-@import 'https://unpkg.com/open-props@1.6.14/normalize.dark.min.css' layer(design-system.normalize);
+@import "https://unpkg.com/open-props@1.6.14" layer(design-system.tokens);
+@import "https://unpkg.com/open-props@1.6.14/normalize.dark.min.css"
+  layer(design-system.normalize);
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200..900&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-@import 'https://www.unpkg.com/layout-craft@0.1.1/dist/utilities.css'
+@import "https://www.unpkg.com/layout-craft@0.1.1/dist/utilities.css"
   layer(design.utilities);
-
 
 @layer base.normalize-overrides {
   :root {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     --surface-1: black;
     --surface-2: oklch(0.19 0 0);
     --surface-3: #f1dadf;
     --text-1: white;
-    --font-size-3:6rem;
+    --font-size-3: 6rem;
 
     --brand-1: oklch(0.65 0.24 16.93);
     --brand-2: oklch(0.77 0.1 90);
@@ -34,12 +34,12 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  .SIP{
+  .SIP {
     background-color: black;
   }
 }
 
-.SIP{
+.SIP {
   background-color: black;
 }
 
@@ -58,40 +58,20 @@
 }
 
 @layer base.components {
-  .Nav {
-    position: fixed;
-    inset-block-end: 0%;
-    inset-inline: 0;
-    block-size: var(--nav-block-size);
-    z-index: var(--layer-3);
-
-    background-color: hsl(0 0% 0%/ 0.1);
-
-    backdrop-filter: blur(28px);
-
-    > a {
-      background: var(--gradient-21);
-
-      color: white;
-      border-radius: var(--radius-round);
-      padding: var(--size-2) var(--size-4);
-      text-decoration: none;
-      font-weight: var(--font-weight-6);
-      box-shadow: var(--shadow-2);
-    }
-
-    @media (width >= 1024px) {
-      background-color: var(--surface-1);
-      font-size: 14px;
-      position: sticky;
-      inset-block-start: 0;
-      inline-size: 100%;
-      justify-items: end;
-      padding-inline: var(--size-5);
-    }
+  .wrapperDiv {
+    display: flex; // Use flexbox to arrange children side by side
+    flex-direction: row; // Ensure the direction is horizontal
+    align-items: flex-start; // Align items at the start of the cross axis
+    justify-content: space-between; // Add space between the items
+    gap: 900px;
   }
 
   .Visual {
+    // flex: 1; // Allow the Visual to take up one part of the available space
+    // max-width: 50%; // Ensure it doesn't exceed half the container width
+    // position: relative;
+    // z-index: 1;
+
     & img {
       inline-size: 100%;
       block-size: 100%;
@@ -101,10 +81,7 @@
       background: var(--gradient-8);
     }
     @media (width >= 1024px) {
-      position: fixed;
-      inline-size: 62%;
-      block-size: calc(100dvb - var(--size-9));
-      inset-block-start: var(--size-9);
+
 
       > * {
         grid-area: 1/1;
@@ -118,7 +95,6 @@
         max-inline-size: 600px;
         aspect-ratio: var(--ratio-square);
         border-radius: var(--radius-3);
-    
       }
     }
 
@@ -142,11 +118,14 @@
 
   .Content {
 
+    
+
     > * {
       min-block-size: calc(100dvb - var(--size-9));
+    //   padding-left: 400rem ;
     }
     & h3 {
-      max-inline-size: 13ch;
+      inline-size: 20ch;
       font-family: "Grape Nuts", cursive;
       /* font-weight: 400; */
       font-style: normal;
@@ -156,6 +135,7 @@
       line-height: var(--font-lineheight-0);
       padding-block-end: var(--size-4);
       color: white;
+    //   padding-left: 400px ;
     }
 
     & p {
@@ -232,8 +212,10 @@
   @layer animation.ScrollDriven {
     @media (width >= 1024px) {
       .SIP {
-        timeline-scope: --first-lockup, --second-lockup, --third-lockup, --fourth-lockup, --fifth-lockup, --sixth-lockup, 
-        --seventh-lockup,--eighth-lockup,--nineth-lockup,--tenth-lockup,--eleventh-lockup,--twelveth-lockup;
+        timeline-scope: --first-lockup, --second-lockup, --third-lockup,
+          --fourth-lockup, --fifth-lockup, --sixth-lockup, --seventh-lockup,
+          --eighth-lockup, --nineth-lockup, --tenth-lockup, --eleventh-lockup,
+          --twelveth-lockup;
       }
 
       picture {
@@ -290,7 +272,6 @@
         }
       }
 
-
       .SixthPic {
         animation: auto slide-out-rotate linear both;
         animation-timeline: --eighth-lockup;
@@ -300,8 +281,7 @@
         }
       }
 
-
-      .SeventhPic { 
+      .SeventhPic {
         animation: auto slide-out-rotate linear forwards;
         /* animation-timeline: --second-lockup; */
         animation-timeline: --seventh-lockup;
@@ -311,7 +291,7 @@
         }
       }
 
-      .EighthPic { 
+      .EighthPic {
         animation: auto slide-out-rotate linear both;
         animation-timeline: --sixth-lockup;
 
@@ -320,9 +300,7 @@
         }
       }
 
-
-
-      .NinethPic { 
+      .NinethPic {
         animation: auto slide-out-rotate linear forwards;
         /* animation-timeline: --second-lockup; */
         animation-timeline: --fifth-lockup;
@@ -332,7 +310,7 @@
         }
       }
 
-      .TenthPic { 
+      .TenthPic {
         animation: auto slide-out-rotate linear both;
         animation-timeline: --fourth-lockup;
 
@@ -341,9 +319,7 @@
         }
       }
 
-
-
-      .EleventhPic { 
+      .EleventhPic {
         animation: auto slide-out-rotate linear forwards;
         /* animation-timeline: --second-lockup; */
         animation-timeline: --third-lockup;
@@ -353,8 +329,7 @@
         }
       }
 
-
-      .TwelvethPic {  
+      .TwelvethPic {
         animation: auto slide-out-rotate linear both;
         animation-timeline: --second-lockup;
 
@@ -362,7 +337,6 @@
           rotate: -5deg;
         }
       }
-
 
       .FirstLockup {
         view-timeline-name: --first-lockup;
@@ -427,7 +401,9 @@
 
   @media (width < 1024px) {
     .SIP {
-      timeline-scope: --first-pic, --second-pic, --third-pic, --fourth-pic,--fifth-pic,--sixth-pic,--seventh-pic,--eighth-pic,--nineth-pic,--tenth-pic,--eleventh-pic,--twelveth-pic;
+      timeline-scope: --first-pic, --second-pic, --third-pic, --fourth-pic,
+        --fifth-pic, --sixth-pic, --seventh-pic, --eighth-pic, --nineth-pic,
+        --tenth-pic, --eleventh-pic, --twelveth-pic;
     }
 
     .SmallScreenContent {
@@ -478,18 +454,17 @@
       .TenthStory {
         visibility: hidden;
         animation-timeline: --tenth-pic;
-      }      
-      
+      }
+
       .EleventhStory {
         visibility: hidden;
         animation-timeline: --eleventh-pic;
       }
-      
+
       .TwelvethStory {
         visibility: hidden;
         animation-timeline: --twelveth-pic;
       }
-
     }
 
     .FirstPic {
@@ -539,9 +514,7 @@
     .TwelvethPic {
       view-timeline-name: --twelveth-pic;
     }
-
   }
-
 }
 
 @supports not (animation-timeline: scroll()) {
@@ -573,4 +546,3 @@
     background-color: hsl(347, 100%, 58%);
   }
 }
-
