@@ -125,12 +125,12 @@
     //   padding-left: 400rem ;
     }
     & h3 {
-      inline-size: 20ch;
+      inline-size: 15ch;
       font-family: "Grape Nuts", cursive;
       /* font-weight: 400; */
       font-style: normal;
       text-wrap: balance;
-      font-size: 3.75rem;
+      font-size: 5.75rem;
       font-weight: var(--font-weight-7);
       line-height: var(--font-lineheight-0);
       padding-block-end: var(--size-4);
@@ -142,6 +142,7 @@
       font-family: "Grape Nuts", cursive;
       /* font-weight: 400; */
       font-style: normal;
+      font-size: 4.75rem;
       max-inline-size: var(--size-content-2);
       font-size: var(--font-size-3);
       color: white;
