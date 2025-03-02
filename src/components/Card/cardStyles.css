@@ -1,0 +1,112 @@
+/* @import "splitting/dist/splitting.css";
+@import "splitting/dist/splitting-cells.css"; */
+.BDcardOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hover-fold {
+  background: #ffe992;
+  border: 5px white solid;
+  height: 310px;
+  margin: 10px auto;
+  perspective: 1500px;
+  position: relative;
+  width: 410px;
+}
+
+.hover-fold h2 {
+  border-bottom: 1px solid #333;
+  margin: 0 40px;
+  padding: 110px 0 2px;
+}
+
+.hover-fold .top {
+  height: 50%;
+  transition: all 0.5s ease-out;
+  transform: rotateX(0deg);
+  transform-origin: 0 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.hover-fold .top .face {
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.hover-fold:hover .top {
+  transform: rotateX(-180deg);
+}
+
+.hover-fold .front {
+  /* background: url("../../assets/usables/img10.jpg"); */
+  height: 100%;
+  width: 100%;
+}
+
+.hover-fold .back {
+  background: #ffe992;
+  height: 100%;
+  padding: 0 30px;
+  transform: rotateX(180deg);
+  width: 100%;
+}
+
+.hover-fold .back p {
+  color: black;
+  margin: 0;
+  max-height: 150px; /* Adjust as needed */
+  overflow-y: auto; /* Enables scrolling */
+  padding-left: 10px; /* Prevents text cutoff due to scrollbar */
+}
+
+.hover-fold .bottom {
+  /* background: url("../../assets/usables/img1_1.png"); */
+  /* bottom; */
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 0;
+}
+
+
+.hover-fold h3{
+  color: black;
+}
+
+
+.BDcardOuter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+  gap: 10px; /* Adjust spacing between items if needed */
+  /* position: absolute; */
+}
+
+.leftImgDiv {
+  display: flex;
+  position: relative;
+  top: -0.5rem;
+}
+
+.rightImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftImg {
+  height: 62vh;
+  width: 32vw;
+}
+.rightImg {
+  height: 62vh;
+  width: 28vw;
+}
+

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.canv {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+
+.canvas-container {
+	transition: opacity 3s ease-in;
+  }
+  
+  .fade-out {
+	opacity: 1;
+  }
+  
+  .fade-in {
+	opacity: 0;
+  }
+  
+  .hello {
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 20%;
+  }
+
+  .canvas-container {
+	position: relative;
+	transition: opacity 3s ease-in;
+  }
+  
+  .canvas-container .fireworkCanvas {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1; 
+
+  }
+/*   
+  .canvas-container .BalloonCanvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2; 
+
+  } */
+
+
+
+.cakeKhaa{
+	font-family: "Grape Nuts", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
